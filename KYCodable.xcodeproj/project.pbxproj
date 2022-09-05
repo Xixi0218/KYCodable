@@ -11,7 +11,49 @@
 		3D07ECE528C589AF001D46A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07ECE428C589AF001D46A2 /* ViewController.swift */; };
 		3D07ECE728C589B1001D46A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D07ECE628C589B1001D46A2 /* Assets.xcassets */; };
 		3D07ECEA28C589B1001D46A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D07ECE828C589B1001D46A2 /* Main.storyboard */; };
+		3D07ECF828C58A3E001D46A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D07ECF728C58A3E001D46A2 /* Cocoa.framework */; };
+		3D07ECFD28C58A3E001D46A2 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07ECFC28C58A3E001D46A2 /* SourceEditorExtension.swift */; };
+		3D07ECFF28C58A3E001D46A2 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07ECFE28C58A3E001D46A2 /* SourceEditorCommand.swift */; };
+		3D07ED0428C58A3E001D46A2 /* KYCodablePlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3D07ECF528C58A3E001D46A2 /* KYCodablePlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D07EDFF28C599E3001D46A2 /* KYSIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07EDFE28C599E3001D46A2 /* KYSIG.swift */; };
+		3D884F7C28C5A66D00177ADA /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D07ECF928C58A3E001D46A2 /* XcodeKit.framework */; };
+		3D884F7D28C5A66D00177ADA /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D07ECF928C58A3E001D46A2 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D07ED0228C58A3E001D46A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D07ECD728C589AF001D46A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D07ECF428C58A3E001D46A2;
+			remoteInfo = KYCodablePlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D07ED0828C58A3E001D46A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3D07ED0428C58A3E001D46A2 /* KYCodablePlugin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D884F7E28C5A66E00177ADA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D884F7D28C5A66D00177ADA /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D07ECDF28C589AF001D46A2 /* KYCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +62,14 @@
 		3D07ECE628C589B1001D46A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D07ECE928C589B1001D46A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D07ECEB28C589B1001D46A2 /* KYCodable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYCodable.entitlements; sourceTree = "<group>"; };
+		3D07ECF528C58A3E001D46A2 /* KYCodablePlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KYCodablePlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D07ECF728C58A3E001D46A2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3D07ECF928C58A3E001D46A2 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		3D07ECFC28C58A3E001D46A2 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		3D07ECFE28C58A3E001D46A2 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		3D07ED0028C58A3E001D46A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D07ED0128C58A3E001D46A2 /* KYCodablePlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYCodablePlugin.entitlements; sourceTree = "<group>"; };
+		3D07EDFE28C599E3001D46A2 /* KYSIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSIG.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +80,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D07ECF228C58A3E001D46A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D07ECF828C58A3E001D46A2 /* Cocoa.framework in Frameworks */,
+				3D884F7C28C5A66D00177ADA /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				3D07ECE128C589AF001D46A2 /* KYCodable */,
+				3D07ECFB28C58A3E001D46A2 /* KYCodablePlugin */,
+				3D07ECF628C58A3E001D46A2 /* Frameworks */,
 				3D07ECE028C589AF001D46A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				3D07ECDF28C589AF001D46A2 /* KYCodable.app */,
+				3D07ECF528C58A3E001D46A2 /* KYCodablePlugin.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +123,27 @@
 			path = KYCodable;
 			sourceTree = "<group>";
 		};
+		3D07ECF628C58A3E001D46A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D07ECF728C58A3E001D46A2 /* Cocoa.framework */,
+				3D07ECF928C58A3E001D46A2 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D07ECFB28C58A3E001D46A2 /* KYCodablePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				3D07ECFC28C58A3E001D46A2 /* SourceEditorExtension.swift */,
+				3D07ECFE28C58A3E001D46A2 /* SourceEditorCommand.swift */,
+				3D07EDFE28C599E3001D46A2 /* KYSIG.swift */,
+				3D07ED0028C58A3E001D46A2 /* Info.plist */,
+				3D07ED0128C58A3E001D46A2 /* KYCodablePlugin.entitlements */,
+			);
+			path = KYCodablePlugin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,15 +154,35 @@
 				3D07ECDB28C589AF001D46A2 /* Sources */,
 				3D07ECDC28C589AF001D46A2 /* Frameworks */,
 				3D07ECDD28C589AF001D46A2 /* Resources */,
+				3D07ED0828C58A3E001D46A2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D07ED0328C58A3E001D46A2 /* PBXTargetDependency */,
 			);
 			name = KYCodable;
 			productName = KYCodable;
 			productReference = 3D07ECDF28C589AF001D46A2 /* KYCodable.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3D07ECF428C58A3E001D46A2 /* KYCodablePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D07ED0528C58A3E001D46A2 /* Build configuration list for PBXNativeTarget "KYCodablePlugin" */;
+			buildPhases = (
+				3D07ECF128C58A3E001D46A2 /* Sources */,
+				3D07ECF228C58A3E001D46A2 /* Frameworks */,
+				3D07ECF328C58A3E001D46A2 /* Resources */,
+				3D884F7E28C5A66E00177ADA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYCodablePlugin;
+			productName = KYCodablePlugin;
+			productReference = 3D07ECF528C58A3E001D46A2 /* KYCodablePlugin.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +195,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					3D07ECDE28C589AF001D46A2 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					3D07ECF428C58A3E001D46A2 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -110,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				3D07ECDE28C589AF001D46A2 /* KYCodable */,
+				3D07ECF428C58A3E001D46A2 /* KYCodablePlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +228,13 @@
 			files = (
 				3D07ECE728C589B1001D46A2 /* Assets.xcassets in Resources */,
 				3D07ECEA28C589B1001D46A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D07ECF328C58A3E001D46A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +250,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D07ECF128C58A3E001D46A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D07EDFF28C599E3001D46A2 /* KYSIG.swift in Sources */,
+				3D07ECFD28C58A3E001D46A2 /* SourceEditorExtension.swift in Sources */,
+				3D07ECFF28C58A3E001D46A2 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D07ED0328C58A3E001D46A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D07ECF428C58A3E001D46A2 /* KYCodablePlugin */;
+			targetProxy = 3D07ED0228C58A3E001D46A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D07ECE828C589B1001D46A2 /* Main.storyboard */ = {
@@ -266,6 +398,7 @@
 		3D07ECEF28C589B1001D46A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = KYCodable/KYCodable.entitlements;
@@ -293,6 +426,7 @@
 		3D07ECF028C589B1001D46A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = KYCodable/KYCodable.entitlements;
@@ -317,6 +451,60 @@
 			};
 			name = Release;
 		};
+		3D07ED0628C58A3E001D46A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KYCodablePlugin/KYCodablePlugin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7H35643SZ9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KYCodablePlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KYCodablePlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmart.exchange.KYCodable.KYCodablePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3D07ED0728C58A3E001D46A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KYCodablePlugin/KYCodablePlugin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7H35643SZ9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KYCodablePlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KYCodablePlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmart.exchange.KYCodable.KYCodablePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +522,15 @@
 			buildConfigurations = (
 				3D07ECEF28C589B1001D46A2 /* Debug */,
 				3D07ECF028C589B1001D46A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D07ED0528C58A3E001D46A2 /* Build configuration list for PBXNativeTarget "KYCodablePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D07ED0628C58A3E001D46A2 /* Debug */,
+				3D07ED0728C58A3E001D46A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
