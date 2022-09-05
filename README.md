@@ -5,7 +5,6 @@
 https://user-images.githubusercontent.com/14053894/188368872-696aaab8-f01b-4bbd-922c-00c9536055f1.mov
 
 
-# Installation
 Installation
 ------------
 
