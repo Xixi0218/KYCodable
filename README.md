@@ -2,7 +2,7 @@
 快速生成class的Codable协议
 
 如下使用方式:
-https://user-images.githubusercontent.com/14053894/188368872-696aaab8-f01b-4bbd-922c-00c9536055f1.mov
+![Demo](docs/demo.gif)
 
 
 Installation
