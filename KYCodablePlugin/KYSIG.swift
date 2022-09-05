@@ -36,7 +36,7 @@ func generate(selection: [String], indentation: String, leadingIndent: String) t
     let codingkey = (["private enum CodingKeys : String, CodingKey {"] + [codingkeyExpressions] + ["}"]).map{ "\(leadingIndent)\($0)" }
 
     let decoderExpressions = ["\(leadingIndent)let values = try decoder.container(keyedBy: CodingKeys.self)\n"] + variables.map{ "\(leadingIndent)\($0.0) = try values.decode(\($0.1).self, forKey: .\($0.0)) \n"}
-    let decoderString = (["init(from decoder: Decoder) throws {"] + decoderExpressions + ["}"]).map{ "\(leadingIndent)\($0)" }
+    let decoderString = (["required init(from decoder: Decoder) throws {"] + decoderExpressions + ["}"]).map{ "\(leadingIndent)\($0)" }
 
     let encodeExpressions = ["\(leadingIndent)var container = encoder.container(keyedBy: CodingKeys.self)"] + variables.map{ "\(leadingIndent)try container.encode(\($0.0), forKey: .\($0.0))\n"}
     let encodeString = (["func encode(to encoder: Encoder) throws {"] + encodeExpressions + ["}"]).map{ "\(leadingIndent)\($0)" }
